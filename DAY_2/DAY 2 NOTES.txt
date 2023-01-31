@@ -1,0 +1,154 @@
+                                         EXP 1.1
+
+a,b,c=10,20,30
+print(a,b,c)
+print(a,b,c,sep='')
+print(a,b,c,sep='%')
+print(a,b,c,sep='*')
+print(a,end='')   ---end operator is used to end the line and the next line is printed in the  same line 
+                     simply end means concating the lines in same format
+print(b,end='*')
+print(c,end='-')
+print('A','B','C',sep='')  ---characters will be printed
+print(1,2,3)
+print(1,2,3,sep+'*')   ---doesn't compile because we cant access numbers directly using "sep" operator 
+
+                                      EXP 1.2
+
+split method synhtax:-   its  used to seperate the values or to take multiple inputs at a time with void spaces
+syntax:- input().split(seperator,maxsplit)
+
+x,y,z=input("enter the three values").split() ---INPUT SHOULD BE TAKEN WITH GAP
+print("total no of students:",x)
+print("total no of boys:",y)
+print("total no of girls:",z)
+
+OUTPUT:-
+enter the three values1 2 3
+total no of students: 1
+total no of boys: 2
+total no of girls: 3
+
+                                    EXP 1.3
+
+x,y,z=input("enter the three values").split('0')  ---INPUT SHOULD BE TAKEN WITH ZERO  IN BETWEEN THEM AS SHOW BELOW
+print("total no of students:",x)
+print("total no of boys:",y)
+print("total no of girls:",z)
+
+
+OUTPUT:-
+enter the three values10203
+total no of students: 1 
+total no of boys:  2 
+total no of girls:  3
+
+                                  EXP 1.4
+a=5
+b=5.0
+if a==b:            ---(==)checks only value but (===)checks both value and datatype
+    print("yes")
+else :
+    print ("No")
+
+output:- yes
+
+                                       EXP 1.5
+a=5
+b=True
+if 1==b:
+    print("yes")
+else :
+    print ("No")
+
+OUTPUT:- yes
+
+                                      #EXP 1.6
+a=int(input("enter number:"))
+if a%7==0:
+    print("yes")
+else:
+    print("No")
+
+                              EXP 1.7
+email="balaji@gmail.com"
+pwd=123456
+otp=5678
+cemail=input("enter the mail")
+cpwd=int(input("enter pwd:"))
+
+
+if(cemail==email and cpwd==pwd):
+    print("log in successfully")
+    cotp=int(input("enter otp:"))
+    if(cotp==otp):
+        print("order placed successfully")
+    else :
+        print("order failed due to incorect otp")
+elif(cemail==email and cpwd!=pwd):
+    print("login failed due to wrong pwd")
+elif(cemail!=email and cpwd==pwd):
+    print("login failed due to wrong email")
+elif(cemail!=email and cpwd!=pwd):
+    print("login failed due to wrong mail and pwd")
+
+
+                                     #EXP 1.8
+
+for i in range (200,1,-1) :
+    
+    print(i,end=' ')
+
+
+                                      #EXP 1.9
+    
+for i in range (97,123) :
+    
+    print(chr(i),end=' ')   -----prints a to z
+
+                                    #EXP 1.10
+for i in range (123,97,-1) :
+    
+    print(chr(i),end=' ')   -----prints z to a
+
+                                 EXP 1.11
+for i in range(90,65,-2):
+    if i!=65:
+        if i!=69:
+            if i!=73:
+                if i!=79:
+                    if i!=85:
+                        print(chr(i),end='')
+       
+   
+    
+
+                                        EXP 2
+a=int(input("enter the day no:"))
+
+if a>84:
+        print("your plan is expired,kindly recharge")
+        
+else :
+        b=int(input("enter no of calls:"))
+        c=int(input("enter the no of msgs sent:"))
+        d=float(input("enter the data :"))
+        print("you have plan upto",84-a,"days")
+        
+        if b>=3000:
+            print("your talktime is expired and 90 rupees topup")
+        else :
+            print("you have",3000-b,"calls left")
+        if c>=100:
+            print("msg limit is over")
+        else :
+            print("you have",100-c,"msgs left")
+        if d>=2.0:
+            print("your data limit is over")
+        else :
+            print("you have",2.0-d,"data left") 
+        
+
+        
+ 
+        
